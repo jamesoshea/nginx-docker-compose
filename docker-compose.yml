@@ -6,7 +6,7 @@ services:
       - ./segments4:/segments4
   nginx:
     restart: always
-    image: nginx:1-alpine
+    image: nginx:latest
     ports:
       - 80:80
       - 443:443
