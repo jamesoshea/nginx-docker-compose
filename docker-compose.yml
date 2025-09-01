@@ -1,12 +1,12 @@
 services:
   brouter:
     restart: unless-stopped
-    image: jimoshea89/brouter
+    image: jimoshea89/brouter:amd64
     volumes:
       - ./segments4:/segments4
   nginx:
     restart: always
-    image: nginx:latest
+    image: nginx:stable-alpine
     ports:
       - 80:80
       - 443:443
