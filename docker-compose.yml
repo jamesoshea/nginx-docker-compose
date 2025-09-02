@@ -8,5 +8,7 @@ services:
   api:
     restart: unless-stopped
     image: jimoshea89/brouter:amd64
+    ports:
+      - 17777:17777
     volumes:
       - ./segments4:/segments4
